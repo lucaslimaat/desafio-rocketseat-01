@@ -1,50 +1,83 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# To-Do List
 
-Currently, two official plugins are available:
+Este é um projeto simples de gerenciamento de tarefas (To-Do List) desenvolvido em React. Permite que os utilizadores adicionem, concluam e eliminem tarefas de forma simples e eficaz.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- Adicionar uma nova tarefa.
+- Marcar uma tarefa como concluída.
+- Excluir uma tarefa.
+- Exibir o total de tarefas criadas e o número de tarefas concluídas.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- [React](https://reactjs.org/) - Biblioteca JavaScript para construir interfaces de utilizador.
+- [Phosphor Icons](https://phosphoricons.com/) - Conjunto de ícones utilizado no projeto.
+- [CSS Modules](https://github.com/css-modules/css-modules) - Abordagem de modularização de estilos CSS.
+  
+## Como executar o projeto
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Siga os passos abaixo para executar o projeto localmente:
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/lucaslimaat/desafio-rocketseat-01
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Navegue até o diretório do projeto:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd desafio-rocketseat-01
 ```
+
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+4. Execute o projeto:
+
+```bash
+npm run dev
+```
+
+O projeto será iniciado em [http://localhost:3000](http://localhost:3000).
+
+## Contribuições
+
+Se quiser contribuir para este projeto, siga os passos abaixo:
+
+1. Faça um _fork_ do projeto.
+2. Crie uma nova _branch_ para a funcionalidade ou correção de bugs:
+
+```bash
+git checkout -b minha-nova-funcionalidade
+```
+
+3. Faça as suas alterações e faça o _commit_:
+
+```bash
+git commit -m "Minha nova funcionalidade"
+```
+
+4. Envie a sua _branch_ para o GitHub:
+
+```bash
+git push origin minha-nova-funcionalidade
+```
+
+5. Abra um _pull request_ no repositório original.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
+
+## Autor
+
+Desenvolvido por Lucas Lima. Sinta-se à vontade para conectar-se comigo!
+
+- [GitHub](https://github.com/lucaslimaat)
+- [LinkedIn](https://www.linkedin.com/in/lucaslimaat/)
