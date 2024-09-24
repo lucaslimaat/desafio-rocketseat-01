@@ -1,0 +1,60 @@
+.task {
+  width: 100%;
+  max-width: 46rem;
+  background: var(--gray-500);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+
+  display: flex;
+  flex: row;
+  align-items: start;
+  gap: 0.75rem;
+
+  font-weight: regular;
+}
+
+.checkButton {
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+  height: auto;
+}
+
+.check {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.check:hover {
+  color: var(--blue-dark);
+}
+
+.task p {
+  width: 100%;
+  color: var(--gray-100);
+  overflow-wrap: anywhere; 
+  white-space: normal; 
+}
+
+.task p.completedText {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.deleteContainer {
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+  height: auto;
+}
+
+.deleteContainer:hover {
+  color: var(--red-500);
+}

@@ -1,0 +1,99 @@
+.sectionTasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 4rem;
+  padding: 0 1rem; /* Adiciona padding para evitar que o conteúdo encoste nas bordas */
+}
+
+.headerTasks {
+  width: 100%; /* Ajusta a largura para 100% no mobile */
+  max-width: 46rem; /* Limita o tamanho máximo em telas grandes */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Corrige erro de digitação: align-items */
+  justify-content: space-between;
+}
+
+.createdTasks, .completed {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Corrige erro de digitação: align-items */
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.createdTasks h1, .completed h1 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.createdTasks p, .completed p {
+  background: var(--gray-400);
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: var(--gray-200);
+}
+
+.noTasks {
+  width: 100%; /* Ajusta a largura para 100% no mobile */
+  max-width: 46rem; /* Limita o tamanho máximo em telas grandes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-top: 1px solid var(--gray-300);
+  border-radius: 8px;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.noTasks h1 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%; /* Ajusta a largura para 100% no mobile */
+  max-width: 46rem; /* Limita o tamanho máximo em telas grandes */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .headerTasks {
+    flex-direction: column; /* Coloca o conteúdo em coluna no tablet */
+    gap: 1rem;
+  }
+
+  .createdTasks, .completed {
+    flex-direction: column; /* Alinha em coluna no tablet */
+    font-size: 12px; /* Ajusta o tamanho da fonte */
+  }
+}
+
+@media (max-width: 480px) {
+  .headerTasks {
+    width: 100%; /* Ajusta a largura no mobile */
+  }
+
+  .createdTasks, .completed {
+    font-size: 10px; /* Ajusta o tamanho da fonte no mobile */
+    gap: 0.25rem; /* Reduz o espaçamento no mobile */
+  }
+
+  .noTasks {
+    padding: 2rem 1rem; /* Reduz o padding no mobile */
+  }
+
+  .noTasks h1 {
+    font-size: 14px; /* Ajusta o tamanho da fonte no mobile */
+  }
+}

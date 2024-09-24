@@ -1,0 +1,74 @@
+
+.createTask {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Corrigido de align-itemns para align-items */
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: -1.7rem;
+  width: 100%;
+  padding: 0 1rem; 
+}
+
+.inputTask {
+  width: 100%; /* Ajusta a largura para se adaptar ao container */
+  max-width: 39.875rem; /* Define um limite máximo em telas maiores */
+  height: 3.375rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding-left: 1rem;
+  transition: border-color 0.3s;
+  color: var(--gray-300);
+}
+
+.inputTask:focus {
+  border: 1px solid var(--purple-dark);
+  color: var(--white);
+}
+
+.buttonTask {
+  width: 100%; /* Ajusta a largura para 100% no mobile */
+  max-width: 5.625rem; /* Define um limite máximo em telas maiores */
+  height: 3.25rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  font-weight: bold;
+
+  display: flex;
+  align-items: center; /* Corrigido de align-itemns para align-items */
+  justify-content: center;
+  gap: 0.5rem;
+
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.buttonTask:hover {
+  background: var(--blue);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .createTask {
+    flex-direction: column; /* No tablet, a direção será em coluna */
+    align-items: center; /* Garante que o input e botão fiquem alinhados ao centro */
+  }
+
+  .inputTask, .buttonTask {
+    width: 100%; /* Ambos os elementos ocuparão toda a largura disponível */
+  }
+}
+
+@media (max-width: 480px) {
+  .inputTask {
+    height: 2.875rem; /* Ajusta a altura no mobile */
+    padding-left: 0.75rem; /* Ajusta o padding no mobile */
+  }
+
+  .buttonTask {
+    height: 2.75rem; /* Reduz a altura do botão no mobile */
+  }
+}
