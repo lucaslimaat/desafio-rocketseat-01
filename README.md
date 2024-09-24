@@ -77,7 +77,7 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](L
 
 ## Autor
 
-Desenvolvido por Lucas Lima. Sinta-se à vontade para conectar-se comigo!
+Desenvolvido por Lucas Torquato. Sinta-se à vontade para conectar-se comigo!
 
 - [GitHub](https://github.com/lucaslimaat)
 - [LinkedIn](https://www.linkedin.com/in/lucaslimaat/)

@@ -5,31 +5,38 @@
   justify-content: center;
   gap: 1.5rem;
   margin-top: 4rem;
-  padding: 0 1rem; /* Adiciona padding para evitar que o conteúdo encoste nas bordas */
+  padding: 0 1rem; 
 }
 
 .headerTasks {
-  width: 100%; /* Ajusta a largura para 100% no mobile */
-  max-width: 46rem; /* Limita o tamanho máximo em telas grandes */
+  width: 100%; 
+  max-width: 46rem; 
   display: flex;
   flex-direction: row;
-  align-items: center; /* Corrige erro de digitação: align-items */
+  align-items: center; 
   justify-content: space-between;
 }
 
 .createdTasks, .completed {
   display: flex;
   flex-direction: row;
-  align-items: center; /* Corrige erro de digitação: align-items */
+  align-items: center; 
   justify-content: center;
   gap: 0.5rem;
   font-weight: bold;
   font-size: 14px;
 }
 
-.createdTasks h1, .completed h1 {
+.createdTasks h1 {
   font-weight: bold;
   font-size: 14px;
+  color: var(--blue);
+}
+
+ .completed h1 {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--purple);
 }
 
 .createdTasks p, .completed p {
@@ -40,8 +47,8 @@
 }
 
 .noTasks {
-  width: 100%; /* Ajusta a largura para 100% no mobile */
-  max-width: 46rem; /* Limita o tamanho máximo em telas grandes */
+  width: 100%; 
+  max-width: 46rem; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,38 +69,37 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  width: 100%; /* Ajusta a largura para 100% no mobile */
-  max-width: 46rem; /* Limita o tamanho máximo em telas grandes */
+  width: 100%; 
+  max-width: 46rem; 
 }
 
-/* Media Queries para Responsividade */
 @media (max-width: 768px) {
   .headerTasks {
-    flex-direction: column; /* Coloca o conteúdo em coluna no tablet */
+    flex-direction: column;
     gap: 1rem;
   }
 
   .createdTasks, .completed {
-    flex-direction: column; /* Alinha em coluna no tablet */
-    font-size: 12px; /* Ajusta o tamanho da fonte */
+    flex-direction: column; 
+    font-size: 12px; 
   }
 }
 
 @media (max-width: 480px) {
   .headerTasks {
-    width: 100%; /* Ajusta a largura no mobile */
+    width: 100%; 
   }
 
   .createdTasks, .completed {
-    font-size: 10px; /* Ajusta o tamanho da fonte no mobile */
-    gap: 0.25rem; /* Reduz o espaçamento no mobile */
+    font-size: 10px; 
+    gap: 0.25rem; 
   }
 
   .noTasks {
-    padding: 2rem 1rem; /* Reduz o padding no mobile */
+    padding: 2rem 1rem; 
   }
 
   .noTasks h1 {
-    font-size: 14px; /* Ajusta o tamanho da fonte no mobile */
+    font-size: 14px; 
   }
 }
